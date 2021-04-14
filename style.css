@@ -1,10 +1,18 @@
+root{
+	--main-background: #0b0c0f;
+	--main-fonts-color: #fff;
+	--main-decor-color:#cc0202;
+    --main-header-background:#ff2727;
+	--main-font-family: 'Poppins', sans-serif;
+}
+
+
 p {
   font-family: 'Alata', sans-serif;
   font-size: 25px;
   text-align: center;
   color: white;
 }
-
 
 button {
   display: inline-block;
@@ -21,8 +29,9 @@ button {
   cursor: pointer;
   margin: 5px;
 }
-.button:hover{
-  color:#468ce9;
+.button:hover {
+	color: var(--main-decor-color);
+	text-shadow: 0 0 50px var(--main-decor-color);
 }
 
 button span {
@@ -43,7 +52,8 @@ button span:after {
 
 button:hover {
   background-color: #fcd703;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 1.2rem gray;
+
 }
 
 button:hover span {
